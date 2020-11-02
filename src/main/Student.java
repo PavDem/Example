@@ -35,7 +35,7 @@ public class Student extends Person {
 
     private void solveTask(Task task) {
         if (task instanceof Autochecked) {
-            System.out.println("Task solved, checked by Autochecked");
+            System.out.println("Task " + task.getNumber() + "  solved, checked by Autochecked");
         } else {
             while (true) {
                 if (mentor.checkCode(task))
